@@ -1,0 +1,201 @@
+body{
+  background-color: $Very-dark-blue;
+}
+
+.container{
+  width: 88%;
+  margin: 2rem auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-menu{
+  background-color: $Dark-blue;
+  border-radius: 1.6rem;
+  width: 100%;
+
+  .card-report{
+    background-color: $Blue;
+    border-radius: 1.6rem;
+    padding: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+
+    img{
+      width: 26%;
+      max-width: 130px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+
+    .report{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0.4rem;
+
+      p{
+        color: $Pale-Blue;
+        font-size: 1.5rem;
+      }
+
+      .name{
+        color: white;
+        font-size: 2.34rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+
+    .menu-link{
+      color: $Desaturated-blue;
+      font-size: 1.8rem;
+      cursor: pointer;
+
+      &:hover{
+        color: white;
+      }
+    }
+
+    .menu-active{
+      color: white;
+    }
+  }
+}
+
+.regular-card{
+  width: 100%;
+  border-radius: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: 92% -1rem;
+
+  .property-card{
+    background-color: $Dark-blue;
+    margin-top: 4rem;
+    border-radius: 1.6rem;
+    padding: 2.5rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .title{
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        z-index: 98;
+      }
+
+      .points{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+          .point{
+            background: white;
+          }
+        }
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          border-radius: 1.6rem;
+          display: none;
+          z-index: 1;
+        }
+
+        &:hover:before{
+          background-color: $Blue;
+          display: block;
+        }
+
+        .point{
+          background-color: $Pale-Blue;
+          width: 0.4rem;
+          height: 0.4rem;
+          border-radius: 50%;
+          margin: 0.2rem;
+          z-index: 99;
+        }
+      }
+    }
+
+    .row-2{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 97;
+
+      .hours{
+        color: white;
+        font-size: 3rem;
+        font-weight: 300;
+      }
+
+      .description{
+        color: $Pale-Blue;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.work{
+  background-color: $Light-red;
+  background-image: url('../../images/icon-work.svg');
+}
+
+.play{
+  background-color: $Soft-blue;
+  background-image: url('../../images/icon-play.svg');
+}
+
+.study{
+  background-color: $Light-red2;
+  background-image: url('../../images/icon-study.svg');
+}
+
+.exercise{
+  background-color: $Lime-green;
+  background-image: url('../../images/icon-exercise.svg');
+}
+
+.social{
+  background-color: $Violet;
+  background-image: url('../../images/icon-social.svg');
+}
+
+.selfcare{
+  background-color: $Soft-orange;
+  background-image: url('../../images/icon-self-care.svg');
+}
